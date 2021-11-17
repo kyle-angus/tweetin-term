@@ -1,0 +1,44 @@
+{
+  "name": "term-tweetin",
+  "description": "Tweet from your terminal!",
+  "version": "0.0.1",
+  "author": "Kyle Angus @kyle-angus",
+  "bin": {
+    "tweet": "./bin/run"
+  },
+  "bugs": "https://github.com/kyle-angus/term-tweetin/issues",
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/kyle-angus/term-tweetin",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "tweet"
+  },
+  "repository": "kyle-angus/term-tweetin",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.4",
+    "twitter-api-v2": "^1.6.5"
+  }
+}
